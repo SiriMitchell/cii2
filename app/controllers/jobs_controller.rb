@@ -1,5 +1,10 @@
 class JobsController < ApplicationController
 
+  def learn
+  end
+
+  def about
+  end
 
   def new
     @job = Job.new

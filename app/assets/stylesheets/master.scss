@@ -1,1 +1,117 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
+
+body {
+ background: image_url('brickwall.png');
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 50px;
+}
+
+h3 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 45px;
+}
+.hero {
+  background: image_url('hero.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 370px;
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.hero2 {
+  background: image_url('homes.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 370px;
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.card-img-top1 {
+  background: image_url('cart.jpg');
+  height: 150px;
+  font-size: 24px;
+  font-weight: 90px;
+}
+
+
+.card-img-top2 {
+  background: image_url('dude.jpg');
+  height: 150px;
+  font-size: 24px;
+  font-weight: 90px;
+}
+
+.card-img-top3 {
+  background: image_url('day.jpg');
+  height: 150px;
+  font-size: 24px;
+  font-weight: 90px;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #6A98AD;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #FFFFFF}
+
+.button:active {
+  background-color: #6A98AD;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: image_url('brickwall.png');
+  color: white;
+  text-align: center;
+}
+
+.text-center {
+  font-size: 22px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+
+.display-4 {
+  background: image_url('home1.jpg');
+}
+
+.day {
+  font-size: 20px;
+}

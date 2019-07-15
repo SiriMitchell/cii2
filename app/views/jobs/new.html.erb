@@ -4,6 +4,8 @@
 <div class="text-right">
   <a  href="/" class="button">Home</a>
 </div>
+<br />
+<br />
 
 <p>Please fill out this application completely and accurately. All information will remain confidential and will be used to help us determine if you are a good fit for a position within our crew.
 
@@ -13,11 +15,11 @@
     <%= f.input :address, placeholder: 'City and State' %>
     <%= f.input :email, placeholder: 'Email Address' %>
     <%= f.input :birthday, placeholder: 'Date of birth' %>
-    <%= f.input :license, as: :check_box, boolean_style: :inline %>
+    <%= f.input :license %>
     <%= f.input :license_type, as: :radio_buttons, collection: [['1','A'], ['2', 'B'], ['3', 'C'], ['4', 'D'], ['5', 'D with F endorsement']] %>
     <%= f.input :dot, as: :radio_buttons, boolean_style: :inline %>
     <%= f.input :violations, as: :radio_buttons, boolean_style: :inline %>
-    <%= f.text_field :explain %>
+    <%= f.text_field :explain_violations %>
     <br />
     <p>Next we will need to know about your driving experience. Please list the employers you drove for, types of vehicles, and dates of employment</p>
 
@@ -41,8 +43,8 @@
     <%= f.input :start_job4 %>
     <%= f.input :end_job4 %>
 
-    <%= f.input :military_service, as: :check_box, boolean_style: :inline %>
-    <%= f.input :branch, as: :collection [['National Guard',1],['Army',2], ['Navy',3], ['Marine Corps',4], ['Air Force',5], ['Coast Guard',6]] %>
+    <%= f.input :military_service %>
+    <%= f.input :branch %>
 
   <div class="row">
     <%= f.input :service_start %>

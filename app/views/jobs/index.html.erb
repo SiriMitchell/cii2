@@ -1,1 +1,61 @@
-<h1>hi</h1>
+
+<div class="hero">
+  <br />
+  <div class="col-10 offset-1 text-center">
+    <h1>Welcome to Cobblestone Industries, Inc.</h1>
+    <hr/>
+    <h2>A contracted FedEx company</h2>
+    <br />
+    <br /><br />
+  </div>
+</div>
+<br />
+
+<div class="container">
+  <div class="row text-center">
+    <div class="col-md">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top1" alt="">
+      <div class="card-body">
+        <h5 class="card-title">A day in the life..</h5>
+        <p class="card-text">Walk through a typical day for one of our drivers and learn more about our competitive pay & benefits package.</p>
+          <a href="/learn" class="button">Learn More</a>
+        <br /><br />
+      </div>
+    </div>
+  </div>
+    <div class="col-sm">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top2" alt="">
+    <div class="card-body">
+      <h5 class="card-title">Looking for a Career?</h5>
+        <p class="card-text">Our drivers are fun, driven individuals who deliver on customer service and safety every day. Become an important part of our team today.</p>
+        <a href="jobs/new" class="button">Apply Now</a>        
+      <br /><br />
+    </div>
+  </div>
+    </div>
+    <div class="col-sm">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top3" alt="">
+    <div class="card-body">
+      <h5 class="card-title">About Cobblestone</h5>
+      <p class="card-text">Learn the history of our unique company and our mission going forward.</p>
+      <a href="/about" class="button">About CII</a>
+      <br /><br />
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+<%= yield %>
+  <br />
+  <br />
+  <br />
+  <nav class="navbar fixed-bottom navbar-light bg-light">
+  <%= link_to 'https://www.facebook.com/CobblestoneIndustriesInc/' do %>
+    <span class="fab fa-facebook">Visit us on Facebook!</span>
+  </nav>
+<% end %>
