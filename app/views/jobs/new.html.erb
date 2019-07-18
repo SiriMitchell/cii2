@@ -8,47 +8,51 @@
 <br />
 
 <p>Please fill out this application completely and accurately. All information will remain confidential and will be used to help us determine if you are a good fit for a position within our crew.
-
+<div class="booyah-box col-10 offset-1"> 
   <%= simple_form_for @job do |f| %>
-    <%= f.input :name, placeholder: 'Name' %>
-    <%= f.input :phone_number, placeholder: 'Phone number' %>
-    <%= f.input :address, placeholder: 'City and State' %>
-    <%= f.input :email, placeholder: 'Email Address' %>
-    <%= f.input :birthday, placeholder: 'Date of birth' %>
-    <%= f.input :license %>
-    <%= f.input :license_type, as: :radio_buttons, collection: [['1','A'], ['2', 'B'], ['3', 'C'], ['4', 'D'], ['5', 'D with F endorsement']] %>
-    <%= f.input :dot, as: :radio_buttons, boolean_style: :inline %>
-    <%= f.input :violations, as: :radio_buttons, boolean_style: :inline %>
-    <%= f.text_field :explain_violations %>
+    <%= f.input :name %>
+    <%= f.input :phone_number %>
+    <%= f.input :address %>
+    <%= f.input :email %>
+    <%= f.input :birthday %><p>Do you have a valid TN License?</p>
+    <%= f.select :license, :collection => %w[Yes No] %>
+    <hr>
+    <%= f.input :license_type, :collection => %w[A B C D] %>
+    <hr>
+    <p>Do you have a valid DOT Physical?</p><%= f.select :dot, :collection => %w[Yes No] %>
+    <hr>
+    <p>Do you have any violations on your MVR for the past 7 years?</p>
+    <%= f.select :violations, :collection => %w[Yes No]  %>
+    <hr>
+    <%= f.input :explain_violations, label: 'If Yes, Please Explain' %>
     <br />
     <p>Next we will need to know about your driving experience. Please list the employers you drove for, types of vehicles, and dates of employment</p>
 
-    <%= f.input :employer1 %>
-    <%= f.input :vehicle1 %>
-    <%= f.input :start_job1 %>
-    <%= f.input :end_job1 %>
-    
-    <%= f.input :employer2 %>
-    <%= f.input :vehicle2 %>
-    <%= f.input :start_job2 %>
-    <%= f.input :end_job2 %>
-
-    <%= f.input :employer3 %>
-    <%= f.input :vehicle3 %>
-    <%= f.input :start_job3 %>
-    <%= f.input :end_job3 %>
-    
-    <%= f.input :employer4 %>
-    <%= f.input :vehicle4 %>
-    <%= f.input :start_job4 %>
-    <%= f.input :end_job4 %>
-
-    <%= f.input :military_service %>
-    <%= f.input :branch %>
+    <%= f.input :employer1, label: 'Current/Most Recent Employer' %>
+    <%= f.input :vehicle1, label: 'Type of Vehicle' %>
+    <%= f.input :start_job1, label: 'Start of Employment' %>
+    <%= f.input :end_job1, label: 'End of Employment' %>
+    <hr>
+    <%= f.input :employer2, label: 'Previous Employer'  %>
+    <%= f.input :vehicle2, label: 'Type of Vehicle' %>
+    <%= f.input :start_job2, label: 'Start of Employment' %>
+    <%= f.input :end_job2, label: 'End of Employment' %>
+    <hr>
+    <%= f.input :employer3, label: 'Previous Employer'  %>
+    <%= f.input :vehicle3, label: 'Type of Vehicle' %>
+    <%= f.input :start_job3, label: 'Start of Employment' %>
+    <%= f.input :end_job3, label: 'End of Employment' %>
+    <hr>
+    <%= f.input :employer4, label: 'Previous Employer'  %>
+    <%= f.input :vehicle4, label: 'Type of Vehicle' %>
+    <%= f.input :start_job4, label: 'Start of Employment' %>
+    <%= f.input :end_job4, label: 'End of Employment' %>
+    <hr>
+    <%= f.input :branch, label: 'Military Service', :collection => %w[Air_Force Army Marines National_Guard Navy] %>
 
   <div class="row">
-    <%= f.input :service_start %>
-    <%= f.input :service_end %>
+    <%= f.input :service_start, label: 'Start of Service' %>
+    <%= f.input :service_end, label: 'End of Service' %>
   </div>
 
     <p>Please select all vehicle sizes that you have driven. Please do not select a vehicle larger than what you are comfortable driving.</p>
@@ -59,3 +63,4 @@
     <br />
     <%= f.submit "Submit Application", class: 'btn btn-primary' %>
   <% end %>
+</div>
