@@ -11,6 +11,11 @@ h1 {
   font-size: 50px;
 }
 
+h2 {
+  font-size: 20px;
+  margin-left: 45px;
+  margin-right: 45px;
+}
 h3 {
   font-family: 'Abril Fatface', cursive;
   font-size: 45px;
@@ -124,4 +129,8 @@ h3 {
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 10px;
+}
+
+.text-align {
+  margin-left: 40px;
 }
