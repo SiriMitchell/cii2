@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'learn', to: 'jobs#learn'
   get 'about', to: 'jobs#about'
   resources :jobs, only: [:new, :create]
+  
 end
