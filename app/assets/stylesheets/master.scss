@@ -1,4 +1,5 @@
 @import "bootstrap";
+
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
 
 
@@ -16,10 +17,20 @@ h2 {
   margin-left: 45px;
   margin-right: 45px;
 }
+
 h3 {
   font-family: 'Abril Fatface', cursive;
   font-size: 45px;
 }
+
+h5 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 25px;
+  padding-top: 7px;
+}
+
+
+
 .hero {
   background: image_url('hero.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -38,6 +49,21 @@ h3 {
   background-size: cover;
   height: 370px;
   box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.hero3 {
+  background: image_url('passion1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 370px;
+  box-shadow: 0px 3px 8px #2a2a2a;   
+}
+
+.card {
+  height: 600px;
+  background: #fff4f2;
 }
 
 .card-img-top1 {
@@ -72,39 +98,6 @@ h3 {
 
 }
 
-.button {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #6A98AD;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
-
-.button:hover {background-color: #FFFFFF}
-
-.button:active {
-  background-color: #6A98AD;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: image_url('brickwall.png');
-  color: white;
-  text-align: center;
-}
 
 .text-center {
   font-size: 22px;
@@ -133,4 +126,62 @@ h3 {
 
 .text-align {
   margin-left: 40px;
+}
+
+
+a {
+    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    display: block;
+    margin: 20px auto;
+    max-width: 180px;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+a.button {
+    color: rgba(30, 22, 54, 0.6);
+    box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+    position: absolute;
+    margin-left: 10px;
+
+}
+
+a.button:hover {
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
+}
+
+a.button2 {
+    color: rgba(30, 22, 54, 0.6);
+    box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+
+}
+
+a.button2:hover {
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: rgba(30, 22, 54, 0.7) 0 80px 0px 2px inset;
+}
+
+.button2 {
+  margin-bottom: 10px;
+}
+
+.nav {
+  background: image_url('brickwall.png');
+  padding: 20px;
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
