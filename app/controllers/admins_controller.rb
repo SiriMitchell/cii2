@@ -1,7 +1,12 @@
 class AdminsController < ApplicationController
+  before_action :authenticate_admin!
 
   def show
-    @job = job.find_params[:id]
+    
   end
 
+  def create
+    #after_sign_in_path_for 
+    #redirect_to admin_path
+  end
 end

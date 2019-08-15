@@ -242,6 +242,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails (~> 9.6.1)
   bootsnap (>= 1.1.0)
   bootstrap (= 4.0.0.alpha6)
   byebug

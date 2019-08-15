@@ -1,0 +1,17 @@
+
+def convert_to_number(s)
+
+
+
+return number
+end
+
+
+
+x=convert_to_number("123")
+x.is_a? Integer # => true
+
+x=convert_to_number("123")
+y=convert_to_number("456")
+
+x + y #=> 579

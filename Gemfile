@@ -75,3 +75,5 @@ gem 'font-awesome-sass', '~> 5.9.0'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
+
+gem 'autoprefixer-rails', '~> 9.6.1'
